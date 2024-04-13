@@ -1,6 +1,14 @@
 const sumAll = function(intA, intB) {
     let finalSum = 0;
 
+    if ( intA <0 || intB <0) {
+        return "ERROR"
+    }
+
+    if(!Number.isInteger(intA) ||!Number.isInteger(intB)) {
+        return "ERROR"
+    }
+
     if ( intA < intB){
 
     for (let x = intA; x <= intB; x++){
