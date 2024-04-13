@@ -1,10 +1,20 @@
 const sumAll = function(intA, intB) {
     let finalSum = 0;
+
+    if ( intA < intB){
+
     for (let x = intA; x <= intB; x++){
         finalSum += x
     }
-return finalSum;
+
+} else {
+    for (let x = intB; x <= intA; x++){
+        finalSum += x
+    }
+
+} return finalSum;
 };
+
 
 
 const result = sumAll ( 1, 4);
